@@ -35,7 +35,7 @@ class LexikTranslationExtension extends Extension
         $loader->load('services.xml');
 
         // set parameters
-        sort($config['managed_locales']);
+        //sort($config['managed_locales']);
         $container->setParameter('lexik_translation.managed_locales', $config['managed_locales']);
         $container->setParameter('lexik_translation.fallback_locale', $config['fallback_locale']);
         $container->setParameter('lexik_translation.storage', $config['storage']);
